@@ -34,8 +34,8 @@ export default Home*/
 
 
 
-import { useClient } from 'next/react';
-
+//import { useClient } from 'next/react';
+'use client'
 import React, { useReducer } from 'react';
 
 const initialState = {
@@ -117,5 +117,5 @@ function Home() {
   );
 }
 
-//export default Home;
-export default useClient(Home);
+export default Home;
+//export default useClient(Home);
